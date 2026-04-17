@@ -13,3 +13,9 @@ def openfile():
         defaultextension=".txt",
         filetypes=[("Text Files", "*.txt")]
     )
+
+    # If a file is selected
+    if file_path:
+        with open(file_path, "r") as file:
+            text.delete(1.0, tk.END)  # Clear existing text
+            text.insert(tk.END, file.read())  # Insert file content
