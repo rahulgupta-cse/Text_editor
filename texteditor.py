@@ -31,3 +31,6 @@ def savefile():
     if file_path:
         with open(file_path, 'w') as file:
             file.write(text.get(1.0, tk.END))  # Write text content
+        
+        # Show confirmation message
+        messagebox.showinfo("Info", "File saved successfully")
