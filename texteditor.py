@@ -19,3 +19,11 @@ def openfile():
         with open(file_path, "r") as file:
             text.delete(1.0, tk.END)  # Clear existing text
             text.insert(tk.END, file.read())  # Insert file content
+
+# Function to save the file
+def savefile():
+    # Open save dialog
+    file_path = filedialog.asksaveasfilename(
+        defaultextension=".txt",
+        filetypes=[("Text Files", "*.txt")]
+    )
