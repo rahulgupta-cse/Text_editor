@@ -27,3 +27,7 @@ def savefile():
         defaultextension=".txt",
         filetypes=[("Text Files", "*.txt")]
     )
+    # If a file path is provided
+    if file_path:
+        with open(file_path, 'w') as file:
+            file.write(text.get(1.0, tk.END))  # Write text content
