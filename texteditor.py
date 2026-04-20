@@ -47,3 +47,10 @@ root.config(menu=menu)
 # Create File menu
 file_menu = tk.Menu(menu)
 menu.add_cascade(label="File", menu=file_menu)
+
+# Add menu options
+file_menu.add_command(label="New", command=newfile)
+file_menu.add_command(label="Open", command=openfile)
+file_menu.add_command(label="Save", command=savefile)
+file_menu.add_separator()
+file_menu.add_command(label="Exit", command=root.quit)
