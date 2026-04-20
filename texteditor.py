@@ -39,3 +39,7 @@ def savefile():
 root = tk.Tk()
 root.title("Text Editor")
 root.geometry("800x600")
+
+# Create menu bar
+menu = tk.Menu(root)
+root.config(menu=menu)
