@@ -34,3 +34,8 @@ def savefile():
         
         # Show confirmation message
         messagebox.showinfo("Info", "File saved successfully")
+
+# Create main window
+root = tk.Tk()
+root.title("Text Editor")
+root.geometry("800x600")
