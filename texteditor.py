@@ -43,3 +43,7 @@ root.geometry("800x600")
 # Create menu bar
 menu = tk.Menu(root)
 root.config(menu=menu)
+
+# Create File menu
+file_menu = tk.Menu(menu)
+menu.add_cascade(label="File", menu=file_menu)
