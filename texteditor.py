@@ -54,3 +54,11 @@ file_menu.add_command(label="Open", command=openfile)
 file_menu.add_command(label="Save", command=savefile)
 file_menu.add_separator()
 file_menu.add_command(label="Exit", command=root.quit)
+
+# Create text area widget
+text = tk.Text(
+    root,
+    wrap=tk.WORD,
+    font=("Helvetica", 12),
+    fg="black"
+)
