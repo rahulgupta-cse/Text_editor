@@ -50,3 +50,7 @@ Add Dark Mode
 Add font customization
 Add word count feature
 Add tabbed editing support
+
+Author
+
+Rahul Gupta
