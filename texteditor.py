@@ -16,7 +16,7 @@ def openfile():
 
     # If a file is selected
     if file_path:
-        with open(file_path, "r") as file:
+        with open(file_path, "r") as file: # for open the file
             text.delete(1.0, tk.END)  # Clear existing text
             text.insert(tk.END, file.read())  # Insert file content
 
@@ -24,7 +24,7 @@ def openfile():
 def savefile():
     # Open save dialog
     file_path = filedialog.asksaveasfilename(
-        defaultextension=".txt",
+        defaultextension=".txt", # add txt as extension for file name
         filetypes=[("Text Files", "*.txt")]
     )
     # If a file path is provided
@@ -62,3 +62,9 @@ text = tk.Text(
     font=("Helvetica", 12),
     fg="black"
 )
+
+# Make text area expand with window
+text.pack(expand=tk.YES, fill=tk.BOTH)
+
+# Run the application
+root.mainloop()
